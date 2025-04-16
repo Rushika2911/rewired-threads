@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Cyber Fusion Jacket",
+    "price": 249.99,
+    "image": "/t1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Neural Network Hoodie",
+    "price": 129.99,
+    "image": "/d3.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Quantum Threads Pants",
+    "price": 179.99,
+    "image": "/c3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Holographic Sneakers",
+    "price": 199.99,
+    "image": "/ja1.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Circuit Board Tee",
+    "price": 79.99,
+    "image": "/b1.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Neon Wave Jacket",
+    "price": 219.99,
+    "image": "/s2.jpg"
+  }
+]

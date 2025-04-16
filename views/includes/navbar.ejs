@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Rewired Threads</title>
+  </head>
+<header
+  class="fixed top-0 left-0 right-0 z-50 bg-background/80  border-b"
+>
+  <div class="container flex h-16 items-center justify-between px-4 md:px-6">
+    <a href="/api/home" class="text-2xl font-bold tracking-tighter">
+      REWIRED THREADS
+    </a>
+    <nav class="md:flex gap-6">
+      <a
+        href="/api/newarrival"
+        class="text-sm font-medium hover:text-primary transition-colors"
+      >
+        New Arrivals
+      </a>
+      <a
+        href="/api/men"
+        class="text-sm font-medium hover:text-primary transition-colors"
+      >
+        Men
+      </a>
+      <a
+        href="/api/women"
+        class="text-sm font-medium hover:text-primary transition-colors"
+      >
+        Women
+      </a>
+      <a
+        href="/api/collection"
+        class="text-sm font-medium hover:text-primary transition-colors"
+      >
+        Collections
+      </a>
+      <a
+        href="/api/about"
+        class="text-sm font-medium hover:text-primary transition-colors"
+      >
+        About
+      </a>
+    </nav>
+    <div class="flex items-center gap-4">
+      <a href="/api/logout" class="hidden md:flex">
+        <i data-lucide="user" class="h-5 w-5"></i>
+        <span class="sr-only">Account</span>
+      </a>
+      <a href="/api/cart" class="relative">
+        <i data-lucide="shopping-bag" class="h-5 w-5"></i>
+        <span class="sr-only">Cart</span>
+        <span
+          class="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-[10px] font-medium text-primary-foreground"
+        >
+          0
+        </span>
+      </a>
+      <button class="md:hidden" id="menu-toggle" aria-label="Toggle menu">
+        <i data-lucide="menu" class="h-5 w-5"></i>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="md:hidden hidden">
+    <nav class="flex flex-col space-y-4 p-4 bg-background border-b">
+      <a href="/api/newArrival" class="text-sm font-medium">New Arrivals</a>
+      <a href="/api/men" class="text-sm font-medium">Men</a>
+      <a href="/api/women" class="text-sm font-medium">Women</a>
+      <a href="/api/collections" class="text-sm font-medium">Collections</a>
+      <a href="/api/about" class="text-sm font-medium">About</a>
+      <a href="/api/logout" class="text-sm font-medium">Log out</a>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,52 @@
+<%- include("includes/navbar.ejs") %>
+
+<main>
+  <div class="container mx-auto px-4 py-16" id="page-content">
+    <h1 class="text-4xl font-bold mb-12 text-center">Men's Collection</h1>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div
+        class="product-card reveal-section bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform hover:scale-105"
+      >
+        <img
+          src="/ja1.jpg"
+          alt="Men's Jacket"
+          class="w-full object-cover"
+        />
+        <div class="product-info p-6">
+          <h2 class="text-2xl font-bold mb-2">Men's Jacket</h2>
+          <p class="price text-gray-600">$79.99</p>
+        </div>
+      </div>
+
+      <div
+        class="product-card reveal-section bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform hover:scale-105"
+      >
+        <img
+          src="/s1.jpg"
+          alt="Casual Shirt"
+          class="w-full object-cover"
+        />
+        <div class="product-info p-6">
+          <h2 class="text-2xl font-bold mb-2">Casual Shirt</h2>
+          <p class="price text-gray-600">$49.99</p>
+        </div>
+      </div>
+
+      <div
+        class="product-card reveal-section bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform hover:scale-105"
+      >
+        <img
+          src="/j1.jpg"
+          alt="Denim Jeans"
+          class="w-full object-cover"
+        />
+        <div class="product-info p-6">
+          <h2 class="text-2xl font-bold mb-2">Denim Jeans</h2>
+          <p class="price text-gray-600">$59.99</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="/menScript.js"></script>

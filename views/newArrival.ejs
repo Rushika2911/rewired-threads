@@ -1,0 +1,33 @@
+<%- include("includes/navbar.ejs") %>
+<link rel="stylesheet" href="/newArrivalStyle.css" />
+<main>
+    <div class="container mx-auto px-4 py-16" id="page-content">
+        <h1 class="text-4xl font-bold mb-12 text-center">New Arrivals</h1>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="product-card reveal-section bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform hover:scale-105">
+                <img src="/c2.jpg" alt="Trench Coats" class="w-full object-cover">
+                <div class="product-info p-6">
+                    <h2 class="text-2xl font-bold mb-2">Trench Coats</h2>
+                    <p class="price text-gray-600">$79.99</p>
+                </div>
+            </div>
+            
+            <div class="product-card reveal-section bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform hover:scale-105">
+                <img src="/c1.jpg" alt="Dresses" class="w-full object-cover">
+                <div class="product-info p-6">
+                    <h2 class="text-2xl font-bold mb-2">Dresses</h2>
+                    <p class="price text-gray-600">$129.99</p>
+                </div>
+            </div>
+            
+            <div class="product-card reveal-section bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform hover:scale-105">
+                <img src="/c3.jpg" alt="Short Dress With Bows" class="w-full object-cover">
+                <div class="product-info p-6">
+                    <h2 class="text-2xl font-bold mb-2">Short Dress With Bows</h2>
+                    <p class="price text-gray-600">$99.99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

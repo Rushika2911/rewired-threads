@@ -1,0 +1,20 @@
+{
+  "name": "rewired-threads",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Anshul",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "fs": "^0.0.1-security",
+    "method-override": "^3.0.0",
+    "path": "^0.12.7"
+  }
+}

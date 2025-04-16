@@ -1,0 +1,40 @@
+<%- include("includes/navbar.ejs") %>
+<main>
+  <div class="container mx-auto px-4 py-16" id="page-content">
+    <h1 class="text-4xl font-bold mb-12 text-center">Our Collections</h1>
+
+    <div id="collections-grid" class="grid md:grid-cols-2 gap-8">
+      <a
+        href="men"
+        class="reveal-section block bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform hover:scale-105"
+      >
+        <img
+          src="/s3.jpg"
+          alt="Cyber Minimalist"
+          class="w-full object-cover"
+        />
+        <div class="p-6">
+          <h2 class="text-2xl font-bold mb-2">Cyber Minimalist</h2>
+          <p class="text-gray-600">
+            Sleek, modern designs for the urban futurist.
+          </p>
+        </div>
+      </a>
+
+      <a
+        href="women"
+        class="reveal-section block bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform hover:scale-105"
+      >
+        <img
+          src="/t1.jpg"
+          alt="White Noise"
+          class="w-full object-cover"
+        />
+        <div class="p-6">
+          <h2 class="text-2xl font-bold mb-2">White Noise</h2>
+          <p class="text-gray-600">Bold colors and cutting-edge styles.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</main>

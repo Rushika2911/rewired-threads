@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Rewired Threads</title>
+    <meta name="description" content="Login to your rewired threads account" />
+    <!-- tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/homeStyles.css" />
+    <!-- Lucide Icons CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
+  </head>
+  <body class="antialiased">
+    <div class="flex min-h-screen">
+      <div class="w-full md:w-1/2 flex flex-col justify-start p-8 md:p-16">
+        <h1 class="text-lg font-light mb-10">LOG IN</h1>
+        
+        <% if (typeof error !== 'undefined') { %>
+        <p id="error-message" class="text-red-500 text-sm mb-4"><%= error %></p>
+        <% } %>
+
+        <form id="login-form" method="POST" action="/api/login">
+          <div class="mb-6">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="EMAIL"
+              class="w-full pb-2 border-b border-gray-300 outline-none focus:border-black text-sm font-light"
+              required
+            />
+          </div>
+
+          <div class="mb-6">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="PASSWORD"
+              class="w-full pb-2 border-b border-gray-300 outline-none focus:border-black text-sm font-light"
+              required
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="w-full md:w-48 border border-gray-800 py-3 px-6 hover:bg-gray-100 transition-colors font-light"
+          >
+            LOG IN
+          </button>
+        </form>
+
+        <div class="mt-10">
+          <a
+            href="/api/signup"
+            class="text-sm text-gray-700 hover:text-black transition-colors"
+          >
+            NEED AN ACCOUNT? REGISTER
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
