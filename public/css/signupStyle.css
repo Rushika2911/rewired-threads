@@ -1,70 +1,121 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+.page-container {
   display: flex;
   min-height: 100vh;
-  justify-content: center;
-  align-items: center;
 }
 
-.container {
-  width: 100%;
-  max-width: 400px;
+.form-container {
+  width: 50%;
   padding: 2rem;
-  border: 1px solid #e2e8f0;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-h2 {
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 600;
+
+.form-content {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.required::after {
+  content: "*";
+  color: #e53e3e;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 2rem;
+  font-size: 1rem;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
   margin-bottom: 1.5rem;
 }
 
-.error {
-  color: #e53e3e;
-  text-align: center;
-  margin-bottom: 1rem;
+.checkbox-input {
+  margin-right: 0.5rem;
 }
 
-.success {
-  color: #38a169;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-input,
-select {
+.signup-btn {
   width: 100%;
   padding: 0.75rem;
-  border: 1px solid #cbd5e0;
-  border-radius: 0.25rem;
-  font-size: 1rem;
-  box-sizing: border-box;
-}
-
-button {
-  width: 100%;
-  background-color: black;
+  background: #111;
   color: white;
-  padding: 0.75rem;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 2rem;
   font-size: 1rem;
   cursor: pointer;
+  margin-bottom: 1.5rem;
 }
 
-button:hover {
-  background-color: #2d3748;
+.login-link {
+  text-align: center;
+}
+
+.login-link a {
+  color: #111;
+  text-decoration: none;
+}
+
+.image-container {
+  width: 50%;
+  height: 765px;
+  background-color: #e8ebe4;
+  overflow: hidden;
+  position: relative;
+  
+}
+
+
+
+@media (max-width: 768px) {
+  .page-container {
+    flex-direction: column;
+  }
+  
+  .form-container, .image-container {
+    width: 100%;
+  }
+  
+  .image-container {
+    height: 300px;
+    order: -1;
+  }
 }
